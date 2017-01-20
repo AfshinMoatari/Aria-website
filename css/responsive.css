@@ -1,0 +1,16 @@
+/*============================================================
+	Burger menu
+==============================================================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    .show-menu, .hide-menu { right: 30px; }
+    
+}
+
+@media (max-width: 991px) {
+
+    .show-menu { right: 30px; }
+    .hide-menu { position: static; top: auto; right: auto; z-index: auto; }
+    .hide-menu a { height: 42px; padding-top: 0; }
+
+}

@@ -1,0 +1,93 @@
+/*============================================================
+	For Small Desktop
+==============================================================*/
+
+
+@media (min-width: 980px) and (max-width: 1150px) {
+
+	/* home slider */
+    #slitSlider .carousel-caption h2 {
+        font-size: 60px;
+    }
+	
+	/* about us */
+    .feature-desc h3 {
+        margin-top: 0;
+    }
+    
+    /* about us */
+
+    .about-content {
+        margin: 0 auto;
+        width: 98%;
+    }
+
+}
+
+/*============================================================
+	Tablet (Portrait) Design for a width of 768px
+==============================================================*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	/* slider */
+    #slitSlider .carousel-caption h2 {
+        font-size: 50px;
+    }
+    
+    #slitSlider .carousel-caption h3 {
+    font-size: 35px;
+    }
+    
+	/* about us */
+    .wrap-about {
+        margin: 0 0 30px;
+    }
+
+    .about-content {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+}
+
+
+/*============================================================
+	Mobile (Landscape) Design for a width of 480px
+==============================================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* homepage slider */
+    #slitSlider .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    #slitSlider .carousel-caption h3 {
+        font-size: 25px;
+    }
+
+    #slitSlider .carousel-caption a {
+        font-size: 14px;
+    }
+
+    .carousel-caption img {
+        width: 60%;
+    }
+
+	/* about us */
+    .wrap-about {
+        margin: 0 auto 55px;
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
