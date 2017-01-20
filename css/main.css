@@ -3,25 +3,25 @@
 ==================================================================*/
 
 body {
-    background-color: #2B2C30;
-	font-family: 'Roboto Slab', sans-serif;
-    line-height: 1.5;
-    font-weight: 300;
-    color: #F1DDBF;
+  background-color: #2F3642;
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #F1DDBF;
 }
 
 ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
 	font-family: 'Dosis';
 	font-weight: 500;
-    text-transform: uppercase;
-	letter-spacing: 2px;
-    color: #F1DDBF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #F1DDBF;
 
 	-webkit-transition: all .3s ease-in 0s;
 	   -moz-transition: all .3s ease-in 0s;
@@ -30,25 +30,25 @@ a {
 }
 
 a, a:focus, a:hover {
-    text-decoration: none;
-    outline: 0;
+  text-decoration: none;
+  outline: 0;
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+  color: #6CB670;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Roboto Slab;
-    font-weight: 400;
+  font-family: Roboto Slab;
+  font-weight: 400;
 }
 
 .btn {
-    background-color: transparent;
-    color: #F1DDBF;
-    padding: 12px 25px;
-	border-radius: 2px;
-    margin-top: 15px;
+  background-color: transparent;
+  color: #F1DDBF;
+  padding: 12px 25px;
+  border-radius: 2px;
+  margin-top: 15px;
 
 	-webkit-transition: all .5s ease-in 0s;
 	   -moz-transition: all .5s ease-in 0s;
@@ -65,25 +65,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-transparent:focus {
-    background-color: transparent;
-    border-color: #6cb670;
+  background-color: transparent;
+  border-color: #6cb670;
 }
 
 .btn-transparent:hover {
-    background-color: #F1DDBF;
+  background-color: #F1DDBF;
 	border: 2px groove transparent;
-    color: #2F3642;
+  color: #2F3642;
 }
 
 .title {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .title h2 {
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 44px;
-    color: #F1DDBF;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 44px;
+  color: #F1DDBF;
 }
 
 .divider span {
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-one {
-    background-color: #2F3642;
+    background-color: #161B24;
 }
 
 /*=================================================================
@@ -159,9 +159,9 @@ nav {
 	background: #2F3642;
 	font-size: 18px;
 	color: #fff;
-    line-height: 32px;
-    text-align: center;
-    border-bottom: 1px dashed #75787F;
+  line-height: 32px;
+  text-align: center;
+  border-bottom: 1px dashed #75787F;
 }
 
 nav a {
@@ -169,9 +169,9 @@ nav a {
 	margin: 0 15px;
 	padding: 11px 0;
 	color: #F1DDBF;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
 }
 nav a:hover { color: #eee; }
 nav a:focus { color: #eee; outline: 0; }
@@ -202,7 +202,6 @@ nav a:focus { color: #eee; outline: 0; }
 }
 .show-menu a:hover, .hide-menu a:hover { color: #fff; }
 
-
 /*=================================================================
 	About section
 ==================================================================*/
@@ -220,14 +219,14 @@ nav a:focus { color: #eee; outline: 0; }
     width: 90%;
 }
 .what-we-do-box .what-we-do-box-icon {
-    width: 170px;
+  width: 170px;
 	height: 170px;
-    margin: 0 auto;
+  margin: 0 auto;
 	padding-top: 55px;
-    font-size: 60px;
-    color: #F1DDBF;
-    line-height: 50px;
-    text-align: center;
+  font-size: 60px;
+  color: #F1DDBF;
+  line-height: 50px;
+  text-align: center;
 	background: transparent;
 	border: 3px dashed #F1DDBF;
 	border-radius: 180px;
@@ -253,9 +252,9 @@ nav a:focus { color: #eee; outline: 0; }
 }
 
 .what-we-do-box-icon:hover {
-    color: #2F3642;
-    line-height: 50px;
-    text-align: center;
+  color: #2F3642;
+  line-height: 50px;
+  text-align: center;
 	background: #F1DDBF;
 	border: none;
 
@@ -272,3 +271,38 @@ nav a:focus { color: #eee; outline: 0; }
 }
 
 .what-we-do-box .what-we-do-box-icon i, .what-we-do-box { vertical-align: middle; }
+
+/*=================================================================
+	Comments section
+==================================================================*/
+
+#reviews {
+  padding: 70px 0;
+}
+
+.rating label {
+  font-size: 75px;
+  font-weight: 300;
+}
+
+.comment-info {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.comment-meta {
+  margin: 0 0 10px;
+}
+
+.comment-meta h3 {
+  font-size: 20px;
+  margin: 30px 0 5px .0;
+}
+
+.comment-meta span {
+  font-size: 12px;
+}
+
+.comment-text {
+	text-align: center;
+}
