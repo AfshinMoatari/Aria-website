@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .title h2 {
@@ -305,4 +305,123 @@ nav a:focus { color: #eee; outline: 0; }
 
 .comment-text {
 	text-align: center;
+}
+
+/*=================================================================
+	Contact
+==================================================================*/
+
+#contact-us {
+  padding: 70px 0 0;
+}
+
+.contact-form, .contact-info{
+	margin-bottom: 40px;
+}
+
+.contact-form .form-control {
+	background-color: transparent;
+	border: 1px solid #F1DDBF;
+	height: 65px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 2px solid #F1DDBF;
+}
+
+#contact-submit {
+	border: 1px solid #F1DDBF;
+	padding: 15px 0;
+	width: 100%;
+	margin: 0;
+}
+
+.contact-form textarea.form-control {
+  padding: 10px;
+  height: 200px;
+}
+
+.contact-details h3 {
+  margin: 0 0 10px 0;
+}
+
+.contact-details div{
+  margin-bottom: 20px;
+}
+
+.contact-details  i,
+.contact-details span {
+  float: left;
+}
+
+.contact-details span {
+	margin: -5px 0 0 15px;
+}
+
+.opening-hours h3 {
+  margin: 20px 0 10px 0;
+}
+
+.opening-hours div{
+  margin-bottom: 10px;
+}
+
+.social h3 {
+  margin: 0 0 10px 0;
+}
+
+.social li {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.social li a{
+  width: 50px;
+  height: 50px;
+  background-color: #F1DDBF;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius:50%;
+  color: #2F3642;
+  border: 2px solid #F1DDBF;
+}
+
+.social li a:hover{
+  background-color: transparent;
+  color: #F1DDBF;
+
+  -webkit-transition: all 600ms ease-out 0s;
+     -moz-transition: all 600ms ease-out 0s;
+     -o-transition: all 600ms ease-out 0s;
+      transition: all 600ms ease-out 0s;
+}
+.social i{
+  padding: 10px 0;
+}
+
+.error {
+  display: none;
+  padding: 10px;
+  color: #D8000C;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  padding: 10px;
 }
