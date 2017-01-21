@@ -9,12 +9,12 @@
     #slitSlider .carousel-caption h2 {
         font-size: 60px;
     }
-	
+
 	/* about us */
     .feature-desc h3 {
         margin-top: 0;
     }
-    
+
     /* about us */
 
     .about-content {
@@ -34,11 +34,11 @@
     #slitSlider .carousel-caption h2 {
         font-size: 50px;
     }
-    
+
     #slitSlider .carousel-caption h3 {
     font-size: 35px;
     }
-    
+
 	/* about us */
     .wrap-about {
         margin: 0 0 30px;
@@ -56,7 +56,7 @@
 	Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
 	/* homepage slider */
     #slitSlider .carousel-caption h2 {
@@ -81,13 +81,26 @@
         width: 80%;
     }
 
+  /* footer */
+    .back-to-top, .copyright {
+        float: none;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .back-to-top a {
+        background-color: #F1DDBF;
+        color: #2F3642;
+        padding: 10px;
+        cursor: pointer;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+    }
+
+    .back-to-top a:hover {
+        border: 1px solid #F1DDBF;
+        background-color: transparent;
+        color: #F1DDBF;
+    }
 }
-
-
-
-
-
-
-
-
-

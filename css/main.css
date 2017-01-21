@@ -35,7 +35,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #6CB670;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -424,4 +424,18 @@ nav a:focus { color: #eee; outline: 0; }
   display: none;
   font-size: 13px;
   padding: 10px;
+}
+
+/*=================================================================
+	Footer
+==================================================================*/
+
+.back-to-top {
+    float: right;
+    padding: 10px 0;
+}
+
+.copyright {
+    float: left;
+    padding: 10px 0;
 }
