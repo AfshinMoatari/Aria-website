@@ -308,6 +308,24 @@ nav a:focus { color: #eee; outline: 0; }
 }
 
 /*=================================================================
+	Map
+==================================================================*/
+#map {
+  height: 100%;
+}
+#map-canvas {
+  height: 470px;
+  width: 100%;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+
+/*=================================================================
 	Contact
 ==================================================================*/
 
@@ -431,11 +449,18 @@ nav a:focus { color: #eee; outline: 0; }
 ==================================================================*/
 
 .back-to-top {
-    float: right;
-    padding: 10px 0;
+  float: right;
+  padding: 10px 0;
 }
 
 .copyright {
-    float: left;
-    padding: 10px 0;
+  float: left;
+  padding: 10px 0;
+}
+
+.back-to-top a:hover {
+  color: #F1DDBF;
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 3px dashed #F1DDBF;
 }
