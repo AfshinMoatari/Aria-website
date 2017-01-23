@@ -91,7 +91,7 @@
     .back-to-top a {
         background-color: #F1DDBF;
         color: #2F3642;
-        padding: 10px;
+        padding: 8px;
         cursor: pointer;
         -moz-border-radius: 8px;
         -webkit-border-radius: 8px;
@@ -102,5 +102,33 @@
         border: 1px solid #F1DDBF;
         background-color: transparent;
         color: #F1DDBF;
+        padding: 12px;
+    }
+
+    /* price/nav */
+    #price.toggled i {
+        border-left: 0;
+    }
+
+    #price {
+        padding-left: 0;
+    }
+
+    #price.toggled {
+        padding-left: 300px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+        border: none;
+    }
+
+    #price.toggled #sidebar-wrapper {
+        width: 300px;
+        border-right: 2px dashed #F1DDBF;
+    }
+
+    #page-content-wrapper {
+        padding: 0;
     }
 }

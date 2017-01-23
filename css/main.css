@@ -310,9 +310,7 @@ nav a:focus { color: #eee; outline: 0; }
 /*=================================================================
 	Map
 ==================================================================*/
-#map {
-  height: 100%;
-}
+
 #map-canvas {
   height: 470px;
   width: 100%;
@@ -462,5 +460,102 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   color: #F1DDBF;
   padding: 5px;
   cursor: pointer;
-  border-bottom: 3px dashed #F1DDBF;
+  border-bottom: 1px solid #F1DDBF;
+}
+
+/*=================================================================
+	Price/Nav
+==================================================================*/
+
+#price {
+    padding-left: 300px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#price.toggled {
+    padding: 0;
+}
+
+#sidebar-wrapper {
+    z-index: 999;
+    position: fixed;
+    left: 300px;
+    width: 300px;
+    height: 100%;
+    margin-left: -300px;
+    overflow-x: hidden;
+    background: #161B24;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-right: 2px dashed #F1DDBF;
+}
+
+#price.toggled #sidebar-wrapper {
+    width: 0;
+    border: none;
+}
+
+#page-content-wrapper {
+    padding: 0;
+}
+
+.menu-toggle i {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px dashed #F1DDBF;
+    border-left: 0;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-align: center;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #F1DDBF;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #F1DDBF;
+    border-bottom: 1px solid #F1DDBF;
+    font-size: 20px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+    border-bottom: 1px solid #F1DDBF;
+    font-size: 25px;
+}
+
+.sidebar-nav > .sidebar-logo {
+    height: 130px;
+}
+
+.sidebar-nav > .sidebar-logo a img {
+    width: 120px;
+    padding-top: 20px;
+}
+
+.sidebar-nav > .sidebar-logo a:hover,
+.sidebar-nav > .sidebar-logo a:active,
+.sidebar-nav > .sidebar-logo a:focus {
+    border-bottom: none;
 }
