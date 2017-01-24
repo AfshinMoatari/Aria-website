@@ -3,6 +3,7 @@
 ==================================================================*/
 
 body {
+  overflow: auto;
   background-color: #2F3642;
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
