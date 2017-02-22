@@ -342,20 +342,6 @@ $(function() {
 
 
     /* ========================================================================= */
-    /*	Fix Slider Height
-    /* ========================================================================= */
-
-
-    var slideHeight = $(window).height();
-
-    $('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-
-    $(window).resize(function(){
-        $('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-    });
-
-
-    /* ========================================================================= */
     /*	Menu button trigger
     /* ========================================================================= */
 
@@ -383,62 +369,18 @@ $(function() {
 
 
     /* ========================================================================= */
-    /*	Home page Slider
+    /*	Hero
     /* ========================================================================= */
 
-    $(function() {
-
-        var Page = (function() {
-
-            var $navArrows = $( '#nav-arrows' ),
-                $nav = $( '#nav-dots > span' ),
-                slitslider = $( '#slitSlider' ).slitslider( {
-
-                    speed : 1600,
-
-                    onBeforeChange : function( slide, pos ) {
-
-                        $nav.removeClass( 'nav-dot-current' );
-                        $nav.eq( pos ).addClass( 'nav-dot-current' );
-
-                    }
-                } ),
-
-                init = function() {
-                    initEvents();
-                },
-                initEvents = function() {
-                    // add navigation events
-                    $navArrows.children( ':last' ).on( 'click', function() {
-                        slitslider.next();
-                        return false;
-                    } );
-
-                    $navArrows.children( ':first' ).on( 'click', function() {
-                        slitslider.previous();
-                        return false;
-                    });
-
-                    $nav.each( function( i ) {
-                        $( this ).on( 'click', function( event ) {
-                            var $dot = $( this );
-                            if( !slitslider.isActive() ) {
-                                $nav.removeClass( 'nav-dot-current' );
-                                $dot.addClass( 'nav-dot-current' );
-                            }
-
-                            slitslider.jump( i + 1 );
-                            return false;
-
-                        });
-                    });
-                };
-                return { init : init };
-
-        })();
-
-        Page.init();
-
+    $(document).scroll(function() {
+      var st = $(this).scrollTop();
+      $("#hero").css({
+        "background-position-y": (-st/20)
+      })
+      $("#hero-parallax").css({
+        "top": (-st/5),
+        "bottom": (st/5)
+      })
     });
 
 

@@ -2,8 +2,11 @@
 	General
 ==================================================================*/
 
+html, body {
+  height: 100vh;
+}
+
 body {
-  overflow: auto;
   background-color: #2F3642;
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
@@ -100,50 +103,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #161B24;
 }
 
-/*=================================================================
-	Slider
-==================================================================*/
-
-#home {
-    position: relative;
-}
-
-#slitSlider .carousel-caption {
-	padding: 0;
-    display: table;
-    height: 100%;
-    width: 100%;
-    min-height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 11;
-	background-color: rgba(0,0,0,.5);
-}
-
-#slitSlider .carousel-caption a {
-    font-size: 18px;
-}
-
-#slitSlider .carousel-caption > div {
-    vertical-align: middle;
-    display: table-cell;
-}
-
-#slitSlider .carousel-caption h2 {
-    color: #F1DDBF;
-    font-family: Roboto Slab, sans-serif;
-    font-size: 60px;
-    font-weight: 200;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-#slitSlider .carousel-caption h3 {
-    color: #F1DDBF;
-    font-family: Roboto Slab, sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 50px;
+.bg-two {
+    background-color: #2F3642;
 }
 
 /*=================================================================
@@ -593,4 +554,115 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
     display: block;
     line-height: 25px;
     color: transparent;
+}
+
+/*=================================================================
+	Hero
+==================================================================*/
+
+#hero {
+  background: url(../img/slides/1.jpg) no-repeat center top;
+  background-size: cover;
+  position: fixed;
+  height: 90%;
+  bottom: 0%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+#page {
+  background: #37BC9B;
+  position: relative;
+  height: 123.45%;
+  top: 90%;
+}
+
+#slitSlider .carousel-caption {
+	padding: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+	background-color: rgba(0,0,0,.5);
+}
+
+.center {
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.caption {
+      position: absolute;
+      margin-top: -18em;
+      top: 50%;
+      display: table;
+
+      height: 100%;
+      width: 100%;
+      min-height: 100%;
+}
+
+.caption > div {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.caption h2 {
+    color: #F1DDBF;
+    font-family: Roboto Slab, sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.caption h3 {
+    color: #F1DDBF;
+    font-family: Roboto Slab, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+#pageHr {
+  background: #F1DDBF;
+  position: relative;
+  height: 5px;
+  display: block;
+  right: 0px;
+  left: 0px;
+  top: 90%;
+  z-index: 1;
+}
+#pageHr > i {
+   margin: -28px;
+   height: 60px;
+   width: 60px;
+   background: #161B24;
+   position: absolute;
+   display: block;
+   left: 50%;
+   top: 50%;
+   border-radius: 30px;
+   border: 5px solid #F1DDBF;
+ }
+
+ #pageHr > i > i {
+  line-height: 50px;
+  font-size: 50px;
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  color: #F1DDBF;
+  display: block;
 }

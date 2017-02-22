@@ -5,8 +5,8 @@
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
-	/* home slider */
-    #slitSlider .carousel-caption h2 {
+	/* hero */
+    #caption .carousel-caption h2 {
         font-size: 60px;
     }
 
@@ -30,13 +30,13 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
 
-	/* slider */
-    #slitSlider .carousel-caption h2 {
+	/* hero */
+    #caption h2 {
         font-size: 50px;
     }
 
-    #slitSlider .carousel-caption h3 {
-    font-size: 35px;
+    #caption h3 {
+        font-size: 35px;
     }
 
 	/* about us */
@@ -58,20 +58,16 @@
 
 @media only screen and (max-width: 767px) {
 
-	/* homepage slider */
-    #slitSlider .carousel-caption h2 {
+	/* hero */
+    #caption h2 {
         font-size: 40px;
     }
 
-    #slitSlider .carousel-caption h3 {
+    #caption h3 {
         font-size: 25px;
     }
 
-    #slitSlider .carousel-caption a {
-        font-size: 14px;
-    }
-
-    .carousel-caption img {
+    .caption img {
         width: 60%;
     }
 
@@ -106,29 +102,5 @@
     }
 
     /* price/nav */
-    #price.toggled i {
-        border-left: 0;
-    }
 
-    #price {
-        padding-left: 0;
-    }
-
-    #price.toggled {
-        padding-left: 300px;
-    }
-
-    #sidebar-wrapper {
-        width: 0;
-        border: none;
-    }
-
-    #price.toggled #sidebar-wrapper {
-        width: 300px;
-        border-right: 2px dashed #F1DDBF;
-    }
-
-    #page-content-wrapper {
-        padding: 0;
-    }
 }
