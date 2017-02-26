@@ -557,11 +557,11 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 /*=================================================================
-	Hero
+	banner
 ==================================================================*/
 
-#hero {
-  background: url(../img/slides/1.jpg) no-repeat center top;
+#banner {
+  background: no-repeat center top;
   background-size: cover;
   position: fixed;
   height: 90%;

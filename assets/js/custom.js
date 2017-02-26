@@ -284,7 +284,7 @@ $(function() {
 		var marker = new google.maps.Marker({
 			position: myLatLng,
 			map: map,
-			icon: 'img/location.png',
+			icon: 'assets/images/location.png',
 		});
 
 		var RoadMapType = new google.maps.StyledMapType(roadAtlasStyles);
@@ -369,15 +369,15 @@ $(function() {
 
 
     /* ========================================================================= */
-    /*	Hero
+    /*	banner
     /* ========================================================================= */
 
     $(document).scroll(function() {
       var st = $(this).scrollTop();
-      $("#hero").css({
+      $("#banner").css({
         "background-position-y": (-st/20)
       })
-      $("#hero-parallax").css({
+      $("#banner-parallax").css({
         "top": (-st/5),
         "bottom": (st/5)
       })
