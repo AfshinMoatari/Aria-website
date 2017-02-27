@@ -1,4 +1,4 @@
-{% include relative-src %}
+{% include relative-src.html %}
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -17,7 +17,7 @@
   <!-- bootstrap.min css -->
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <!-- Animate.css -->
-      <link rel="stylesheet" href="{% include relative-src.html src=/assets/css/animate.css %}">
+      <link rel="stylesheet" href="{% src=/assets/css/animate.css %}">
   <!-- Slit Slider css -->
       <link rel="stylesheet" href="{{ base_path }}/assets/css/slit-slider.css">
   <!-- Carousel -->
