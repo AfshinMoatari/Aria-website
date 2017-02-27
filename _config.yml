@@ -1,10 +1,9 @@
 #Site
-title: Aria | Skrædderi, Rens & Vask
-description: Aria skrædderi provide tailoring service with competitive prices and high service levels.
-author: Afshin Moatari
-baseurl: "/aria-website"
-logo: "/assets/images/aria.svg"
-favicon: "/assets/images/favicon.png"
+baseurl: ""
+
+#collections
+collections:
+  service:
 
 #Settings
 uploads_dir: "assets/images"

@@ -4,27 +4,20 @@
 
 			<!-- section title -->
 			<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-				<h2 class="editable">om os</h2>
+				<h2>om os</h2>
 				<div class="divider wow fadeIn">
 					<span></span>
 				</div>
 			</div>
 			<!-- /section title -->
 
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
+			<!-- section description -->
+			<div class="col-md-12 text-center wow fadeInUp about-description">
+				<p class="editable">{{ page.description }}</p>
 			</div>
-			<!-- End About item -->
+			<!-- /section description -->
 
+			{% for service_item in site.service %}
 			<!-- About item -->
 			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
 				<div class="wrap-about what-we-do-box">
@@ -32,152 +25,13 @@
 						<i class="fa fa-pencil"></i>
 					</div>
 					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+						<h3 class="ddd">{{ service_item.name }}</h3>
+						<p>{{ service_item.description }}</p>
 					</div>
 				</div>
 			</div>
 			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
-
-			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms" >
-				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-icon">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="about-content text-center">
-						<h3 class="ddd">Header</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-					</div>
-				</div>
-			</div>
-			<!-- End About item -->
+			{% endfor %}
 
 		</div> 		<!-- End row -->
 	</div>   	<!-- End container -->

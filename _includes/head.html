@@ -1,42 +1,40 @@
 {% include base_path.html %}
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.company.description }}{% endif %}">
+  <meta name="author" content="{{ site.data.company.author }}">
   <!--  Mobile Specific -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.data.company.title | escape }}{% endif %}</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="{% include relative-src.html src=site.favicon %}" />
 
   <!-- CSS -->
   <!-- Fontawesome Icon font -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- bootstrap.min css -->
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <!-- Animate.css -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/animate.css">
-  <!-- Slit Slider css -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/slit-slider.css">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/animate.css">
   <!-- Carousel -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/owl.carousel.css">
   <!-- Star rating -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/star-rating.min.css">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/star-rating.min.css">
   <!-- Main Stylesheet -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
   <!-- Media Queries -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/media-queries.css">
-      <!-- Responsive items -->
-      <link rel="stylesheet" href="{{ base_path }}/assets/css/responsive.css>
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/media-queries.css">
+  <!-- Responsive items -->
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/responsive.css">
 
 
   <!-- Google Font -->
   <!-- Roboto Slab / body Font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css">
   <!-- Dosis / button Font -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet" type="text/css">
 
   <!-- Modernizer Script for old Browsers -->
   <script src="{{ base_path }}/assets/js/modernizr-2.8.3.min.js"></script>
@@ -54,8 +52,6 @@
 	<script src="{{ base_path }}/assets/js/star-rating.min.js"></script>
   <!-- Owl Carousel -->
 	<script src="{{ base_path }}/assets/js/owl.carousel.min.js"></script>
-	<!-- Grid js -->
-	<script src="{{ base_path }}/assets/js/grid.js"></script>
   <!-- Google Map API -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBhQyTSkY28ZPt2wzvGVg51AmP1SvSITc"></script>
   <!-- Mixitup js -->

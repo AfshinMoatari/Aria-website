@@ -171,7 +171,12 @@ nav a:focus { color: #eee; outline: 0; }
 ==================================================================*/
 
 #about {
-    padding: 70px 0;
+  padding: 70px 0;
+}
+
+.about-description p{
+  padding-bottom: 50px;
+  text-align: left;
 }
 
 .col-md-3{
