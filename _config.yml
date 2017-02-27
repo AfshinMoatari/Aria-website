@@ -4,7 +4,7 @@ description: Aria skrædderi provide tailoring service with competitive prices a
 author: Afshin Moatari
 baseurl: "/aria-website"
 logo: "/assets/images/aria.svg"
-favicon: "assets/images/favicon.png"
+favicon: "/assets/images/favicon.png"
 
 #Settings
 uploads_dir: "assets/images"
