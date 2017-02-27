@@ -1,6 +1,6 @@
 ## Synopsis
 
-Custom Jekyll Theme made for Aria Skrædderi, Rens & Vask. using Bootstrap and optimized for CloudCannon content highlighting feature. 
+Custom Jekyll Theme made for Aria Skrædderi, Rens & Vask using Bootstrap and optimized for CloudCannon content highlighting feature. 
 
 [Website homepage](https://afshinmoatari.github.io/aria-website/)
 
