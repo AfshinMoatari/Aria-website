@@ -1,4 +1,154 @@
+
 $(function() {
+
+  /* =========================================================================== */
+  /*	Star
+  /* =========================================================================== */
+
+  $(".comment-rating").starRating({
+    starSize: 20,
+    readOnly: true,
+    totalStars: 5,
+    initialRating: 1.5,
+    strokeColor: '#161B24',
+    useGradient: false,
+    emptyColor: '#161B24',
+    activeColor: '#F1DDBF',
+  });
+
+  $(".main-rating").starRating({
+    starSize: 35,
+    readOnly: true,
+    totalStars: 5,
+    initialRating: 1.5,
+    strokeColor: '#161B24',
+    useGradient: false,
+    emptyColor: '#161B24',
+    activeColor: '#F1DDBF',
+  });
+
+  /* ========================================================================= */
+	/*	Opening Notice
+	/* =========================================================================  */
+
+  var currentDate = new Date();
+  var weekday = [];
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+    var currentDay = weekday[currentDate.getDay()];
+    var currentTimeHours = currentDate.getHours();
+    currentTimeHours = currentTimeHours < 10 ? "0" + currentTimeHours : currentTimeHours;
+    var currentTimeMinutes = currentDate.getMinutes();
+    var timeNow = currentTimeHours + "" + currentTimeMinutes;
+    var currentDayID = "#" + currentDay;
+
+    var openTimeSplit = $(currentDayID + " " + ".opens").text().split(":");
+            console.log(openTimeSplit);
+    var openTimeHours = openTimeSplit[0];
+    openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
+    var openTimeMinutes = openTimeSplit[1];
+    var openTimex = openTimeSplit[0] + openTimeSplit[1];
+
+    var closeTimeSplit = $(currentDayID).children('.closes').text().split(":");
+    var closeTimeHours = closeTimeSplit[0];
+    closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
+    var closeTimeMinutes = closeTimeSplit[1];
+    var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
+            console.log(closeTimeSplit);
+
+    $(".openorclosed span.day").html(currentDay + " " + currentTimeHours + " : " + currentTimeMinutes);
+    if (timeNow >= openTimex && timeNow <= closeTimex) {
+      $("#indicator").attr("fill", "#1EC4B4");
+      $(".openorclosed").css("color", "#1EC4B4");
+      $(".openorclosed span.day-stat").html("open");
+      $(currentDayID + " " + "span").css("background-color", "#1EC4B4");
+    } else {
+      $("#indicator").attr("fill", "#EE4747");
+      $(".openorclosed").css("color", "#EE4747");
+      $(".openorclosed span.day-stat").html("closed");
+      $(currentDayID + " " + "span").css("background-color", "#EE4747");
+    }
+
+      /* ========================================================================= */
+    	/*	progress bar
+    	/* =========================================================================  */
+
+      var getMax = function(){
+              return $(document).height() - $(window).height();
+          }
+
+          var getValue = function(){
+              return $(window).scrollTop();
+          }
+
+          if('max' in document.createElement('progress')){
+              // Browser supports progress element
+              var progressBar = $('progress');
+
+              // Set the Max attr for the first time
+              progressBar.attr({ max: getMax() });
+
+              $(document).on('scroll', function(){
+                  // On scroll only Value attr needs to be calculated
+                  progressBar.attr({ value: getValue() });
+              });
+
+              $(window).resize(function(){
+                  // On resize, both Max/Value attr needs to be calculated
+                  progressBar.attr({ max: getMax(), value: getValue() });
+              });
+          }
+          else {
+              var progressBar = $('.progress-bar'),
+                  max = getMax(),
+                  value, width;
+
+              var getWidth = function(){
+                  // Calculate width in percentage
+                  value = getValue();
+                  width = (value/max) * 100;
+                  width = width + '%';
+                  return width;
+              }
+
+              var setWidth = function(){
+                  progressBar.css({ width: getWidth() });
+              }
+
+              $(document).on('scroll', setWidth);
+              $(window).on('resize', function(){
+                  // Need to reset the Max attr
+                  max = getMax();
+                  setWidth();
+              });
+          }
+
+  /* ========================================================================= */
+	/*	Opening Notice
+	/* =========================================================================  */
+
+  $(window).scroll(function() {
+
+      if ($(this).scrollTop()>0)
+       {
+        $("#banner").css("top", "0");
+        $('.opening-notice').slideUp();
+       }
+      else
+       {
+        $("#banner").css("top", "10%");
+        $('.opening-notice').slideDown();
+        $('.nav').slideDown();
+        $('.show-menu').hide();
+       }
+
+   });
 
   /* ========================================================================= */
 	/*	Mixitup
@@ -311,31 +461,19 @@ $(function() {
   	});
 
 
-    /* =========================================================================== */
-    /*	Star
-    /* =========================================================================== */
-
-
-    $('.rating-loading').rating({
-      displayOnly: true,
-      step: 0.1,
-    });
-
-
     /* ========================================================================= */
     /*	Nice Scroll - Custom Scrollbar
     /* ========================================================================= */
 
 
-    var nice = $("html").niceScroll({
+    var nice = $("body").niceScroll({
         cursorborderradius: "15px",
-        cursorwidth: "10px",
-        cursorfixedheight: 45,
+        cursorwidth: "15px",
+        cursorfixedheight: 55,
         cursorcolor: "#F1DDBF",
-        zindex: 9999,
-        cursorborder: 0,
+        zindex: 999,
         autohidemode: true,
-        scrollspeed: 200,
+        scrollspeed: 100,
         boxzoom: true,
         dblclickzoom: true,
     });
@@ -346,14 +484,15 @@ $(function() {
     /* ========================================================================= */
 
 
-    $('.show-menu a').on('click', function(e) {
+    $('.show-menu').on('click', function(e) {
         e.preventDefault();
-        $(this).fadeOut(100, function(){ $('nav').slideDown(); });
+        $(this).fadeOut(100, function(){ $('.nav').slideDown(); });
     });
 
-    $('.hide-menu a').on('click', function(e) {
+    $('.hide-menu').on('click', function(e) {
         e.preventDefault();
-        $('nav').slideUp(function(){ $('.show-menu a').fadeIn(); });
+        $('.nav, .opening-notice ').slideUp(function(){ $('.show-menu').show(); });
+        $("#banner").css("top", "0");
     });
 
 

@@ -1,29 +1,30 @@
 <section id="about" class="bg-one">
 	<div class="container">
-		<div class="row">
 
-			<!-- section title -->
-			<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-				<h2>om os</h2>
-				<div class="divider wow fadeIn">
-					<span></span>
-				</div>
+		<!-- section title -->
+		<div class="title p-5 text-center wow fadeIn" data-wow-duration="1500ms" >
+			<h2>om os</h2>
+			<div class="divider wow fadeIn">
+				<span></span>
 			</div>
-			<!-- /section title -->
+		</div>
+		<!-- /section title -->
+
+		<div class="row">
 
 			<!-- section description -->
 			<div class="col-md-12 text-center wow fadeInUp about-description">
-				<p class="editable">{{ page.description }}</p>
+				<p class="lead text-center pb-3 editable">{{ page.description }}</p>
 			</div>
 			<!-- /section description -->
 
 			{% for service_item in site.service %}
 			<!-- About item -->
-			<div class="col-md-3 text-center wow fadeInUp" data-wow-duration="1000ms">
+			<div class="col-sm-6 col-md-4 py-4 text-center wow fadeInUp" data-wow-duration="1000ms">
 				<div class="wrap-about what-we-do-box">
-					<div class="what-we-do-box-image" style="background-image: url({% include relative-src.html src=service_item.image %})"></div>
+					<div class="what-we-do-box-image rounded-circle" style="background-image: url({% include relative-src.html src=service_item.image %})"></div>
 					<div class="about-content text-center">
-						<h3 class="ddd">{{ service_item.name }}</h3>
+						<h3 class="mt-4">{{ service_item.name }}</h3>
 						<p>{{ service_item.description }}</p>
 					</div>
 				</div>

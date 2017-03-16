@@ -1,13 +1,41 @@
 <nav>
-  <a href="#about">About</a>
-  <a href="#reviews">Kundeanmeldelser</a>
-  <a href="#contact-us">Kontaktoplysninger</a>
-  <a href="prices.html">Priser</a>
-  <a href="#titem-06">item-05</a>
-  <div class="hide-menu">
+  <div class="container-fluid">
+  <progress value="0" id="progressBar" class="single">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+  <div class="opening-notice text-center pt-2">
+    <svg style="margin: 0 10px; padding: 2px 0;" width="14px" height="14px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle id="indicator" fill="#1EC4B4" cx="6" cy="6" r="6"></circle>
+    </svg>
+    <h6 class="openorclosed" style="display: inline-block;">it's <span class="day"></span> - we are <span class="day-stat"></span></h6>
+  </div>
+    <ul class="nav navbar-nav justify-content-center text-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#body">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#reviews">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#locate-us">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-us">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="prices.html">Prices</a>
+      </li>
+      <div class="nav-item hide-menu  text-center">
+        <a href=""><i class="fa fa-bars"></i></a>
+      </div>
+    </ul>
+  </div>
+  <div class="show-menu">
     <a href=""><i class="fa fa-bars"></i></a>
   </div>
 </nav>
-<div class="show-menu">
-  <a href=""><i class="fa fa-bars"></i></a>
-</div>

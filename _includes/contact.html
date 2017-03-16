@@ -1,18 +1,19 @@
 <section id="contact-us" class="bg-one">
   <div class="container">
+
+    <!-- section title -->
+		<div class="title p-5 text-center wow fadeIn" data-wow-duration="1500ms" >
+			<h2>Kontakt Os</h2>
+			<div class="divider wow fadeIn">
+				<span></span>
+			</div>
+		</div>
+		<!-- /section title -->
+
     <div class="row">
 
-      <!-- section title -->
-      <div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-        <h2>Kontakt Os</h2>
-        <div class="divider wow fadeIn">
-          <span></span>
-        </div>
-      </div>
-      <!-- /section title -->
-
       <!-- Contact Details -->
-      <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+      <div class="contact-info py-5 col-md-6 wow fadeInUp" data-wow-duration="500ms">
 
         <div class="contact-details">
           <h3>Kontaktoplysninger</h3>
@@ -33,40 +34,75 @@
         <div class="social">
           <h3>Social Pages</h3>
           <ul>
-            <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+            <li><a class="rounded-circle" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a class="rounded-circle" href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
           </ul>
         </div>
 
-        <div class="opening-hours">
+        <div class="schedule">
           <h3>Åbningstider</h3>
-          <div class="clearfix">
-            <span>Mandag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Tirsdag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Onsdag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Torsdag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Fredag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Lørdag: 9:00 - 18:00</span>
-          </div>
-          <div class="clearfix">
-            <span>Søndag: 9:00 - 18:00</span>
-          </div>
+          <ul class="list-group">
+            <li id="Sunday" class="list-group-item justify-content-between">
+              Sunday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+            <li id="Monday" class="list-group-item justify-content-between">
+              Monday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+            <li id="Tuesday" class="list-group-item justify-content-between">
+              Tuesday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+            <li id="Wednesday" class="list-group-item justify-content-between">
+              Wednesday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+            <li id="Thursday" class="list-group-item justify-content-between">
+              Thursday:
+              <span class="badge badge-default badge-pill">
+                Close
+              </span>
+            </li>
+            <li id="Friday" class="list-group-item justify-content-between">
+              Friday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+            <li id="Saturday" class="list-group-item justify-content-between today">
+              Saturday:
+              <span class="badge badge-default badge-pill">
+                <span class="opens">03:00</span>
+                <td>-</td>
+                <span class="closes">22:00</span>
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- / End Contact Details -->
 
       <!-- Contact Form -->
-      <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+      <div class="contact-form py-5 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
         <form id="contact-form" method="post" action="sendmail.php" role="form">
 
           <div class="form-group">
