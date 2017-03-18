@@ -15,4 +15,15 @@
 				{% include footer.html %}
 			</div>
 		</body>
+		<script>
+			$(document).ready(function() {
+
+				$("#reviews").googleReviews({
+						placeId: 'ChIJc4c7YztUUkYR9hWrXob3was'
+					, min_rating: 1
+					, max_rows: 5
+				});
+
+			});
+		</script>
 </html>

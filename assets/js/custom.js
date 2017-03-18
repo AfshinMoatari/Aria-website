@@ -1,32 +1,6 @@
 
 $(function() {
 
-  /* =========================================================================== */
-  /*	Star
-  /* =========================================================================== */
-
-  $(".comment-rating").starRating({
-    starSize: 20,
-    readOnly: true,
-    totalStars: 5,
-    initialRating: 1.5,
-    strokeColor: '#161B24',
-    useGradient: false,
-    emptyColor: '#161B24',
-    activeColor: '#F1DDBF',
-  });
-
-  $(".main-rating").starRating({
-    starSize: 35,
-    readOnly: true,
-    totalStars: 5,
-    initialRating: 1.5,
-    strokeColor: '#161B24',
-    useGradient: false,
-    emptyColor: '#161B24',
-    activeColor: '#F1DDBF',
-  });
-
   /* ========================================================================= */
 	/*	Opening Notice
 	/* =========================================================================  */
@@ -49,7 +23,6 @@ $(function() {
     var currentDayID = "#" + currentDay;
 
     var openTimeSplit = $(currentDayID + " " + ".opens").text().split(":");
-            console.log(openTimeSplit);
     var openTimeHours = openTimeSplit[0];
     openTimeHours = openTimeHours < 10 ? "0" + openTimeHours : openTimeHours;
     var openTimeMinutes = openTimeSplit[1];
@@ -60,7 +33,6 @@ $(function() {
     closeTimeHours = closeTimeHours < 10 ? "0" + closeTimeHours : closeTimeHours;
     var closeTimeMinutes = closeTimeSplit[1];
     var closeTimex = closeTimeSplit[0] + closeTimeSplit[1];
-            console.log(closeTimeSplit);
 
     $(".openorclosed span.day").html(currentDay + " " + currentTimeHours + " : " + currentTimeMinutes);
     if (timeNow >= openTimex && timeNow <= closeTimex) {
@@ -444,21 +416,6 @@ $(function() {
 	}
 
 	google.maps.event.addDomListener(window, "load", initialize);
-
-
-  /* ========================================================================= */
-	/*	Comments Carousel
-	/* =========================================================================  */
-
-
-  	$("#comments").owlCarousel({
-  		slideSpeed: 500,
-  		paginationSpeed: 500,
-  		singleItem: true,
-  		pagination : false,
-  		autoPlay: true,
-  		transitionStyle : "fade"
-  	});
 
 
     /* ========================================================================= */
