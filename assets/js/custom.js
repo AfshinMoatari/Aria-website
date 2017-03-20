@@ -2,6 +2,36 @@
 $(function() {
 
   /* ========================================================================= */
+	/*	About item loading
+	/* =========================================================================  */
+
+  var rowNumber = 2;
+	var $post = $(".service-item");
+	var fadeInSpeed = 500;
+
+	for(var i = 0, length = $post.length; i < length; i += 3) {
+		$post.slice(i, i+3).wrapAll("<div class='row'></div>");
+	}
+
+  for(var i = 0, length = $post.length; i < length; i += rowNumber) {
+    $post.parent().slice(i, i+rowNumber).wrapAll("<div class='postContainer'></div>");
+  }
+
+	$(".postContainer").each(function(){
+		$(this).append("<div class='loadMore my-3 text-center'><a class='loadMore_btn btn btn-transparent animated fadeInUp' id='loadMore_btn' href='#'>Load more item</a></div>");
+	});
+
+  $('.postContainer').last().find('.loadMore').fadeOut(0);
+
+  $('.postContainer').not(":first").fadeOut(0);
+
+  $('#about .container').on('click', '#loadMore_btn', function(evt){
+    evt.preventDefault();
+    $(this).parents('.postContainer').next().fadeIn(fadeInSpeed);
+    $(this).parent().fadeOut(0);
+  });
+
+  /* ========================================================================= */
 	/*	Opening Notice
 	/* =========================================================================  */
 
@@ -115,8 +145,7 @@ $(function() {
       else
        {
         $("#banner").css("top", "10%");
-        $('.opening-notice').slideDown();
-        $('.nav').slideDown();
+        $('.opening-notice, .nav').slideDown();
         $('.show-menu').hide();
        }
 
