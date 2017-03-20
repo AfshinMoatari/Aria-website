@@ -24,7 +24,7 @@ $(function() {
         }
 
         var initialize_place = function(c){
-          var map = new google.maps.Map(document.getElementById('map-canvas'));
+          var map = new google.maps.Map(document.getElementById('map'));
 
           var request = {
             placeId: plugin.settings.placeId
@@ -87,7 +87,7 @@ $(function() {
 
           for (var i = row_count; i >= 0; i--) {
             var stars = reviews[i].rating;
-            $("#"+i).starRating('setRating', stars, true);
+              $("#"+i).starRating('setRating', stars, true);
           };
 
   				$(".main-rating").starRating({
